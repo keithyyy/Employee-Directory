@@ -8,11 +8,9 @@ const TableItems = (props) => {
                 <img alt={props.name} src={props.picture}/>
             </td>
             <td>
-                John Doe
-                {/* {props.name} */}
+                {props.name}
             </td>
             <td>
-                905-647-7891
                 {props.phone}
             </td>
             <td>
