@@ -1,5 +1,7 @@
-import Reach from "react";
+import React from "react";
 import SearchBar from "./Searchbar"
+import TableHead from "./TableHead"
+import TableItems from "./TableItems"
 
 const Container = () => {
     return (
@@ -10,6 +12,15 @@ const Container = () => {
                 <SearchBar />
             </div>
 
+            <div className="table-responsive">
+                <table className="table">
+                    <TableHead />
+                    <tbody>
+                    <TableItems />
+                    </tbody>
+                </table>
+
+            </div>
 
         </div>
     )
