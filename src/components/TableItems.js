@@ -1,5 +1,4 @@
 import React from "react";
-import TableHead from "./TableHead";
 
 const TableItems = (props) => {
     return (

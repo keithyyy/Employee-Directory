@@ -21,15 +21,7 @@ const Container = () => {
 
     const debouncedInput = useDebounce(searchedEmployee, 300)
 
-    useEffect(() => {
-
-        if(debouncedInput) {
-            filterList()
-        } else {
-            populateEmployees()
-        }
-        
-    }, [debouncedInput])
+    
 
     function filterList() {
         API.getUsers()
@@ -63,6 +55,16 @@ const Container = () => {
         setSearchedEmployee(value)
         console.log(value)
     }
+
+    useEffect(() => {
+
+        if(debouncedInput) {
+            filterList()
+        } else {
+            populateEmployees()
+        }
+        
+    }, [debouncedInput])
 
     return (
         <div className="container mt-4">
